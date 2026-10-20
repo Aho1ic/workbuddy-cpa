@@ -1,0 +1,14 @@
+{
+  "auth": {
+    "accessToken": "REPLACE_ME",
+    "refreshToken": "REPLACE_ME",
+    "expiresAt": 0,
+    "domain": "www.workbuddy.ai"
+  },
+  "account": {
+    "uid": "REPLACE_ME",
+    "enterpriseId": "",
+    "nickname": ""
+  },
+  "baseURL": ""
+}

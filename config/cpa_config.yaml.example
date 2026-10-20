@@ -1,0 +1,25 @@
+# CLIProxyAPI (CPA) 插件配置示例 - WorkBuddy AI
+
+server:
+  host: 127.0.0.1
+  port: 8317
+
+plugins:
+  - name: workbuddy
+    path: ./workbuddy.dylib   # macOS 为 .dylib，Linux 为 .so
+    enabled: true
+    config:
+      credential_file: ./workbuddy.json
+      default_realm: https://www.workbuddy.ai
+
+# 客户端调用指南:
+# 1. Claude Code:
+#    export ANTHROPIC_BASE_URL=http://127.0.0.1:8317
+#    export ANTHROPIC_API_KEY=dummy
+#    export ANTHROPIC_MODEL=hy3
+#    claude
+#
+# 2. Cursor / OpenAI 兼容客户端:
+#    Base URL: http://127.0.0.1:8317/v1
+#    API Key: dummy
+#    Model: glm-5.2 / kimi-k2.7 / deepseek-v4-pro

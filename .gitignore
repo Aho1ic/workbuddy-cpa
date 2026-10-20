@@ -1,0 +1,23 @@
+workbuddy.dylib
+workbuddy.so
+workbuddy.dll
+workbuddy.h
+workbuddy.json
+out/
+hostsmoke/host_smoke
+*.tar.gz
+
+# --- 本地凭据与敏感文件（禁止提交） ---
+*.json.local
+.env
+.env.*
+config/cpa_config.yaml
+scripts/__pycache__/
+__pycache__/
+*.pyc
+
+# --- 构建产物 / 二进制 ---
+hostsmoke/host_smoke
+
+# --- 系统文件 ---
+.DS_Store

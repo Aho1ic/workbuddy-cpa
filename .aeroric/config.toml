@@ -1,0 +1,22 @@
+# Aeroric project configuration
+
+[agent]
+# Default agent to use for new tasks: "claude", "claude_gpt55", or "codex"
+default = "claude"
+# Default permission mode for new tasks: "ask", "auto_edit", or "full_access"
+default_permission_mode = "full_access"
+# Text automatically prepended (followed by a newline) to every task prompt
+prompt_prefix = ""
+
+[git]
+# Prompt used when generating commit messages via the AI agent
+commit_prompt = "You are a git commit message generator. Based on the provided git diff, write a concise and descriptive commit message. Follow these rules:\n1. Use the imperative mood (e.g., \"Add feature\" not \"Added feature\")\n2. First line: type(scope): short summary (50 chars or less)\n   Types: feat, fix, docs, style, refactor, test, chore\n3. If needed, add a blank line then a brief body explaining what and why\n4. Output ONLY the commit message text, no explanations or markdown formatting"
+# Timeout in seconds when generating commit messages via the AI agent
+commit_message_timeout_secs = 15
+
+[editor]
+# Format editable local files after saving
+format_on_save = false
+# Default sort order for the file browser and SFTP panels
+file_browser_sort = { field = "modified", direction = "desc" }
+sftp_sort = { field = "modified", direction = "desc" }
